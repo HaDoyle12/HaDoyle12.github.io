@@ -1,2 +1,9 @@
 User-agent: *
 Allow: /
+
+# Defense-in-depth: explicitly disallow paths that were removed
+# from this repo in 2026-06-15 cleanup. The files no longer exist,
+# but this stops any cached crawlers from re-fetching them.
+Disallow: /p0l1t1c4l-dr4ft-xk7p.html
+Disallow: /CONSISTENCY_REPORT.md
+Disallow: /CONSISTENCY_REPORT
